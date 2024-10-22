@@ -1,0 +1,11 @@
+[
+    {
+      "url": "https://github.com/clapgrow/clapgrow_app_v2.git",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/The-Commit-Company/frappe-types.git",
+      "branch": "main"
+    }
+  ]
+  
