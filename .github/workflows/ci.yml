@@ -64,7 +64,7 @@ jobs:
       - name: Inject GITHUB_TOKEN into apps.json and Encode
         run: |
           # Replace the {{PAT}} placeholder with the actual GitHub token in apps.json
-          sed -i "s|{{PAT}}|${{ secrets.GITHUB_TOKEN }}|g" ./ci/apps.json
+          sed -i "s|{{PAT}}|${{ secrets.GH_TOKEN }}|g" ./ci/apps.json
           # Encode the modified apps.json as base64 and store it in GITHUB_ENV
           echo "APPS_JSON_BASE64=$(base64 -w 0 ./ci/apps.json)" >> $GITHUB_ENV
 
