@@ -25,6 +25,6 @@ development/*
 *.pyc
 __pycache__
 venv
-
 # NodeJS
 node_modules
+ci/apps.json
