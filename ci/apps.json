@@ -1,6 +1,6 @@
 [
   {
-    "url": "https://github.com/clapgrow/clapgrow_app_v2.git",
+    "url": "https://{{PAT}}@github.com/clapgrow/clapgrow_app_v2.git",
     "branch": "main"
   },
   {
