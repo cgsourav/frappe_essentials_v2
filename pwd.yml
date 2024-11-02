@@ -2,7 +2,7 @@ version: "3"
 
 services:
   backend:
-    image: https://github.com/cgsourav/frappe_essentials_v2.git
+    image: ghcr.io/cgsourav/frappe_essentials_v2/clapgrow_v2:1.0.0
     deploy:
       restart_policy:
         condition: on-failure
@@ -11,7 +11,7 @@ services:
       - logs:/home/frappe/frappe-bench/logs
 
   configurator:
-    image: https://github.com/cgsourav/frappe_essentials_v2.git
+    image: ghcr.io/cgsourav/frappe_essentials_v2/clapgrow_v2:1.0.0
     deploy:
       restart_policy:
         condition: none
@@ -39,7 +39,7 @@ services:
       - logs:/home/frappe/frappe-bench/logs
 
   create-site:
-    image: https://github.com/cgsourav/frappe_essentials_v2.git
+    image: ghcr.io/cgsourav/frappe_essentials_v2/clapgrow_v2:1.0.0
     deploy:
       restart_policy:
         condition: none
@@ -89,7 +89,7 @@ services:
       - db-data:/var/lib/mysql
 
   frontend:
-    image: https://github.com/cgsourav/frappe_essentials_v2.git
+    image: ghcr.io/cgsourav/frappe_essentials_v2/clapgrow_v2:1.0.0
     depends_on:
       - websocket
     deploy:
@@ -113,7 +113,7 @@ services:
       - "8080:8080"
 
   queue-long:
-    image: https://github.com/cgsourav/frappe_essentials_v2.git
+    image: ghcr.io/cgsourav/frappe_essentials_v2/clapgrow_v2:1.0.0
     deploy:
       restart_policy:
         condition: on-failure
@@ -127,7 +127,7 @@ services:
       - logs:/home/frappe/frappe-bench/logs
 
   queue-short:
-    image: https://github.com/cgsourav/frappe_essentials_v2.git
+    image: ghcr.io/cgsourav/frappe_essentials_v2/clapgrow_v2:1.0.0
     deploy:
       restart_policy:
         condition: on-failure
@@ -157,7 +157,7 @@ services:
       - redis-cache-data:/data
 
   scheduler:
-    image: https://github.com/cgsourav/frappe_essentials_v2.git
+    image: ghcr.io/cgsourav/frappe_essentials_v2/clapgrow_v2:1.0.0
     deploy:
       restart_policy:
         condition: on-failure
@@ -169,7 +169,7 @@ services:
       - logs:/home/frappe/frappe-bench/logs
 
   websocket:
-    image: https://github.com/cgsourav/frappe_essentials_v2.git
+    image: ghcr.io/cgsourav/frappe_essentials_v2/clapgrow_v2:1.0.0
     deploy:
       restart_policy:
         condition: on-failure
