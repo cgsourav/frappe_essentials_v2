@@ -78,7 +78,7 @@ jobs:
         uses: docker/login-action@v2
         with:
           registry: ${{ inputs.registry || env.REGISTRY }}
-          username: ${{ secrets.REGISTRY_USERNAME || 'cgsourav' }}
+          username: ${{ secrets.REGISTRY_USERNAME || env.PROJECT_NAMESPACE }}
           password: ${{ secrets.GH_TOKEN }}
 
       ### Using docker build to build and push the image
